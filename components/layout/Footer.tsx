@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Code, Briefcase, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
+import { GithubIcon, LinkedinIcon } from '@/components/icons/BrandIcons'
 import { profile } from '@/content/profile'
 
 export function Footer() {
@@ -23,7 +24,7 @@ export function Footer() {
             aria-label="LinkedIn"
             className="hover:text-accent transition-colors"
           >
-            <Briefcase size={15} aria-hidden="true" />
+            <LinkedinIcon size={15} />
           </a>
           <a
             href={profile.socials.github}
@@ -32,7 +33,7 @@ export function Footer() {
             aria-label="GitHub"
             className="hover:text-accent transition-colors"
           >
-            <Code size={15} aria-hidden="true" />
+            <GithubIcon size={15} />
           </a>
           <a
             href={`mailto:${profile.socials.email}`}

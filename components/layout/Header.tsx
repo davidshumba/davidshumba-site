@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Code, Briefcase, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
+import { GithubIcon, LinkedinIcon } from '@/components/icons/BrandIcons'
 import { profile } from '@/content/profile'
 
 const navItems = [
@@ -19,7 +20,6 @@ export function Header() {
         </Link>
 
         <nav className="flex items-center gap-6" aria-label="Main navigation">
-          {/* Nav links hidden on mobile — icon links always visible */}
           <div className="hidden sm:flex items-center gap-6">
             {navItems.map((item) => (
               <Link
@@ -40,7 +40,7 @@ export function Header() {
               aria-label="LinkedIn profile"
               className="hover:text-accent transition-colors"
             >
-              <Briefcase size={16} aria-hidden="true" />
+              <LinkedinIcon size={16} />
             </a>
             <a
               href={profile.socials.github}
@@ -49,7 +49,7 @@ export function Header() {
               aria-label="GitHub profile"
               className="hover:text-accent transition-colors"
             >
-              <Code size={16} aria-hidden="true" />
+              <GithubIcon size={16} />
             </a>
             <a
               href={`mailto:${profile.socials.email}`}
