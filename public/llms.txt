@@ -1,0 +1,28 @@
+# David Shumba
+
+David Shumba is a UK-based Data Analyst and Degree Apprentice.
+
+## What he does
+
+He builds data dashboards, reporting automation, and data pipelines. His primary tool is Power BI; he also works with SQL, Python (pandas), and AI automation tooling.
+
+## Current focus
+
+Data analytics and AI automation. He is currently building:
+- NHS A&E Performance Dashboard — analysing NHS England A&E waiting-time data to surface operational patterns and performance trends.
+- Predictive Maintenance model using the NASA C-MAPSS turbofan engine degradation dataset.
+
+## Skills
+
+Power BI, DAX, SQL, Excel, Python, pandas, NumPy, scikit-learn, prompt engineering, workflow automation, Git, GitHub, Jupyter, VS Code, Vercel.
+
+## Links
+
+- Website: https://davidshumba.com
+- LinkedIn: https://linkedin.com/in/davidshumba
+- GitHub: https://github.com/davidshumba
+
+## Contact
+
+davidshumba2005@gmail.com
+United Kingdom
