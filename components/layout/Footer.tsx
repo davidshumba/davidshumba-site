@@ -2,9 +2,9 @@ import Link from 'next/link'
 import { Mail } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/components/icons/BrandIcons'
 import { profile } from '@/content/profile'
+import { CurrentYear } from '@/components/layout/CurrentYear'
 
 export function Footer() {
-  const year = new Date().getFullYear()
 
   return (
     <footer className="border-t border-border mt-24">
@@ -45,7 +45,7 @@ export function Footer() {
         </div>
 
         <p className="font-mono text-xs text-muted">
-          © {year} · Built with Next.js
+          © <CurrentYear /> · Built with Next.js
         </p>
       </div>
     </footer>

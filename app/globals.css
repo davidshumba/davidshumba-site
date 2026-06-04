@@ -7,7 +7,6 @@
   --color-muted: #888888;
   --color-accent: #C4A75E;
   --color-border: #1F1F1F;
-  --color-card: #111111;
 
   /* Font tokens — become font-sans and font-mono utility classes */
   --font-sans: var(--font-geist-sans), system-ui, sans-serif;
@@ -16,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -46,3 +46,7 @@ body::after {
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--color-bg); }
 ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

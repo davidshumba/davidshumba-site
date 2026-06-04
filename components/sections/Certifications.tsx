@@ -29,6 +29,7 @@ export function Certifications() {
                     href={cert.credentialUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`View credential for ${cert.name}`}
                     className="font-mono text-xs text-accent hover:underline underline-offset-4 inline-flex items-center gap-1 shrink-0"
                   >
                     View <ArrowUpRight size={11} aria-hidden="true" />
