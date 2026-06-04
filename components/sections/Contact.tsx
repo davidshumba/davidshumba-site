@@ -11,10 +11,10 @@ export function Contact() {
         <AnimatedReveal>
           <Eyebrow>Get in Touch</Eyebrow>
           <h2 className="text-3xl font-semibold text-fg mb-4 tracking-tight">
-            Let's connect.
+            Let&apos;s connect.
           </h2>
           <p className="text-muted max-w-[440px] leading-relaxed mb-10">
-            Open to interesting conversations about data, AI, and what you're
+            Open to interesting conversations about data, AI, and what you&apos;re
             building. Reach out on LinkedIn or email directly.
           </p>
           <div className="flex flex-wrap gap-3">

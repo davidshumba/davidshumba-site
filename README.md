@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# davidshumba.com
 
-## Getting Started
+Personal career site for David Shumba. Built with Next.js 16 (App Router), TypeScript, Tailwind CSS v4, and Framer Motion.
 
-First, run the development server:
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Deployment (Vercel)
 
-To learn more about Next.js, take a look at the following resources:
+1. Push this repository to GitHub.
+2. Go to vercel.com/new and import the repo.
+3. Vercel auto-detects Next.js — no build configuration needed.
+4. In Vercel project settings → Domains, add `davidshumba.com`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## DNS (Cloudflare)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+In Cloudflare DNS for `davidshumba.com`:
 
-## Deploy on Vercel
+- Add an **A record**: name `@`, value `76.76.21.21` (Vercel IP), proxy status → **DNS only** (grey cloud) for accurate Vercel analytics.
+- Optionally add a **CNAME**: name `www`, value `cname.vercel-dns.com`, DNS only.
+- Set up a redirect (in Vercel or Cloudflare Page Rules) from `www` → apex, or vice-versa.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Full Vercel domain docs: https://vercel.com/docs/projects/domains
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Editing content
+
+All content lives in `content/`. Edit these files to update the site — no JSX changes required.
+
+| File | What it controls |
+|------|-----------------|
+| `content/profile.ts` | Name, role, tagline, "currently building" link, social URLs, stat row |
+| `content/projects.ts` | Project cards in the Work section |
+| `content/experience.ts` | Work experience timeline entries |
+| `content/education.ts` | Education timeline entries |
+| `content/skills.ts` | Grouped skills and tools |
+| `content/certifications.ts` | Certifications list (section hides when array is empty) |
+
+### Adding a project
+
+In `content/projects.ts`, add an object to the `projects` array:
+
+```ts
+{
+  slug: 'my-new-project',
+  title: 'My New Project',
+  description: 'One or two sentences describing what it does and the outcome.',
+  status: 'live',
+  date: 'July 2026',
+  tags: ['Power BI', 'SQL'],
+  liveUrl: 'https://...',       // optional
+  sourceUrl: 'https://github.com/davidshumba/...', // optional
+  highlight: true,
+}
+```
+
+### Adding a certification
+
+In `content/certifications.ts`, add an object to the `certifications` array:
+
+```ts
+{
+  name: 'Microsoft Certified: Power BI Data Analyst Associate',
+  issuer: 'Microsoft',
+  date: 'Jan 2026',
+  credentialUrl: 'https://learn.microsoft.com/...',
+}
+```
+
+## OG image
+
+A generated OG image lives at `app/opengraph-image.tsx`. To replace it with a custom design, place a 1200×630 PNG at `public/og.png` and update `metadata.openGraph.images` in `app/layout.tsx` to reference `/og.png`.
