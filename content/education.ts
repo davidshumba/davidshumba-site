@@ -9,7 +9,7 @@ export type Education = {
 // TODO: replace with your real education details
 export const educations: Education[] = [
   {
-    qualification: 'BSc Data Analytics (Degree Apprenticeship)',
+    qualification: 'BSc Digital and Technology Solutions (Degree Apprenticeship)',
     // institution: 'University Name',  // uncomment and fill in
     start: '2024',
     end: 'Present',

@@ -28,7 +28,7 @@ export function Contact() {
             </a>
             <a
               href={`mailto:${profile.socials.email}`}
-              className="inline-flex items-center gap-2 border border-border text-muted font-mono text-xs px-5 py-3 hover:border-fg hover:text-fg transition-colors"
+              className="inline-flex items-center gap-2 border border-border text-muted font-mono text-xs px-5 py-3 hover:border-fg hover:text-fg transition-colors break-all"
             >
               {profile.socials.email}
             </a>

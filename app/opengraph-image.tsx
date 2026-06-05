@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'David Shumba — Data Analyst & Builder'
+export const alt = 'David Shumba — Data Analyst Degree Apprentice'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -52,7 +52,7 @@ export default function OgImage() {
             letterSpacing: '0.02em',
           }}
         >
-          Data Analyst & Builder — UK
+          Data Analyst Degree Apprentice — UK
         </p>
       </div>
     ),

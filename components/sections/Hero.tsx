@@ -4,13 +4,13 @@ import { AnimatedReveal } from '@/components/primitives/AnimatedReveal'
 
 export function Hero() {
   return (
-    <section className="pt-40 pb-24">
+    <section className="pt-36 pb-12">
       <div className="mx-auto max-w-[880px] px-6">
         <AnimatedReveal>
-          <p className="font-mono text-xs tracking-widest text-muted uppercase mb-8">
+          <p className="font-mono text-xs tracking-widest text-muted uppercase mb-5 sm:mb-8">
             {profile.location}
           </p>
-          <h1 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[1.05] tracking-tight text-fg mb-6">
+          <h1 className="text-[clamp(2rem,9vw,5rem)] font-semibold leading-[1.05] tracking-tight text-fg mb-6">
             {profile.name}
           </h1>
           <p className="text-lg text-muted max-w-[560px] leading-relaxed mb-10">
@@ -19,7 +19,7 @@ export function Hero() {
         </AnimatedReveal>
 
         <AnimatedReveal delay={0.1}>
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-14">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-10 sm:mb-14">
             <span className="font-mono text-xs text-muted">Currently building</span>
             <a
               href={profile.currentlyBuilding.href}

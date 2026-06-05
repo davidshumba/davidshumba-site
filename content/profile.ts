@@ -28,7 +28,7 @@ export type Profile = {
 
 export const profile: Profile = {
   name: 'David Shumba',
-  role: 'Data Analyst — Degree Apprentice',
+  role: 'Data Analyst Degree Apprentice',
   // employer: 'Your Employer',  // uncomment and fill in if you want to show it
   location: 'United Kingdom',
   // TODO: refine tagline in your own voice

@@ -13,6 +13,15 @@
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
+/* Light mode overrides */
+html.light {
+  --color-bg: #F5F4F0;
+  --color-fg: #111111;
+  --color-muted: #636363;
+  --color-accent: #9B7D2E;
+  --color-border: #DDDBD4;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -46,6 +55,9 @@ body::after {
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--color-bg); }
 ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+
+/* Tone down grain on light backgrounds */
+html.light body::after { opacity: 0.018; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

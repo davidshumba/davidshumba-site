@@ -44,7 +44,7 @@ export function Experience() {
   return (
     <Section id="experience">
       <div className="mx-auto max-w-[880px] px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           {experiences.length > 0 && (
             <div>
               <AnimatedReveal>

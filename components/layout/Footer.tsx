@@ -7,7 +7,7 @@ import { CurrentYear } from '@/components/layout/CurrentYear'
 export function Footer() {
 
   return (
-    <footer className="border-t border-border mt-24">
+    <footer className="border-t border-border mt-14 sm:mt-24">
       <div className="mx-auto flex max-w-[880px] flex-col sm:flex-row items-center justify-between gap-4 px-6 py-10">
         <Link
           href="/"

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Mail } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/components/icons/BrandIcons'
+import { ThemeToggle } from '@/components/layout/ThemeToggle'
 import { profile } from '@/content/profile'
 
 const navItems = [
@@ -19,26 +20,27 @@ export function Header() {
           {profile.name}
         </Link>
 
-        <nav className="flex items-center gap-6" aria-label="Main navigation">
-          <div className="hidden sm:flex items-center gap-6">
+        <nav className="flex items-center gap-4 sm:gap-6" aria-label="Main navigation">
+          <div className="flex items-center gap-4 sm:gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-mono text-xs text-muted hover:text-fg transition-colors tracking-wide"
+                className="font-mono text-xs text-muted hover:text-fg transition-colors tracking-wide py-1"
               >
                 {item.label}
               </Link>
             ))}
           </div>
 
-          <div className="flex items-center gap-3 text-muted">
+          <div className="flex items-center gap-1 sm:gap-3 text-muted">
+            <ThemeToggle />
             <a
               href={profile.socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn profile"
-              className="hover:text-accent transition-colors"
+              className="hover:text-accent transition-colors p-1.5 -m-1.5"
             >
               <LinkedinIcon size={16} />
             </a>
@@ -47,14 +49,14 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub profile"
-              className="hover:text-accent transition-colors"
+              className="hover:text-accent transition-colors p-1.5 -m-1.5"
             >
               <GithubIcon size={16} />
             </a>
             <a
               href={`mailto:${profile.socials.email}`}
               aria-label="Send email"
-              className="hover:text-accent transition-colors"
+              className="hover:text-accent transition-colors p-1.5 -m-1.5 hidden sm:block"
             >
               <Mail size={16} aria-hidden="true" />
             </a>
