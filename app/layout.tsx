@@ -9,7 +9,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'David Shumba — Data Analyst Degree Apprentice',
+    default: 'David Shumba',
     template: '%s | David Shumba',
   },
   description:
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://davidshumba.com'),
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'David Shumba — Data Analyst Degree Apprentice',
+    title: 'David Shumba',
     description:
       'UK-based Data Analyst Degree Apprentice building dashboards, automation, and AI workflows.',
     url: 'https://davidshumba.com',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'David Shumba — Data Analyst Degree Apprentice',
+    title: 'David Shumba',
     description:
       'UK-based Data Analyst Degree Apprentice building dashboards, automation, and AI workflows.',
   },
