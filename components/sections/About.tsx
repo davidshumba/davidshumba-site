@@ -5,7 +5,7 @@ import { AnimatedReveal } from '@/components/primitives/AnimatedReveal'
 // TODO: Replace these paragraphs with your own voice.
 // Keep it first-person, factual, and concise. 2–4 paragraphs is ideal.
 const paragraphs = [
-  "I am a Data Analyst Degree Apprentice, and aspiring Data Scientist, based in the UK, building the systems that help businesses obtain robust insight from, and make better decisions with their data.",
+  "I am a Data Degree Apprentice, and aspiring Data Scientist, based in the UK, building the systems that help businesses obtain robust insight from, and make better decisions with their data.",
   "My work sits at the intersection of data engineering, analytics, and AI automation. I spend most of my time in Power BI and SQL — building dashboards, pipelines, and automated reporting workflows that remove friction from how data reaches the people who need it.",
   "I care about work that's verifiable: live systems, published code, documented methods. Every project on this site is real, linked to its source, and honestly marked as in-progress or shipped.",
 ]

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'David Shumba',
     description:
-      'UK-based Data Analyst Degree Apprentice building dashboards, automation, and AI workflows.',
+      'UK-based Data Degree Apprentice building data systems, software, and AI workflows.',
     url: 'https://davidshumba.com',
     siteName: 'David Shumba',
     locale: 'en_GB',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'David Shumba',
     description:
-      'UK-based Data Analyst Degree Apprentice building dashboards, automation, and AI workflows.',
+      'UK-based Data Degree Apprentice building data systems, software, and AI workflows.',
   },
   robots: { index: true, follow: true },
 }

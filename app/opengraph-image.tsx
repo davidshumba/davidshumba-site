@@ -52,7 +52,7 @@ export default function OgImage() {
             letterSpacing: '0.02em',
           }}
         >
-          Data Analyst Degree Apprentice — UK
+          Data Degree Apprentice — UK
         </p>
       </div>
     ),

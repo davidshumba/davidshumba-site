@@ -9,7 +9,7 @@ export type Experience = {
 // TODO: replace with your real work history
 export const experiences: Experience[] = [
   {
-    role: 'Data Analyst Degree Apprentice',
+    role: 'Data Degree Apprentice',
     // org: 'Your Employer',  // uncomment and fill in if you want to name the employer
     start: '2024',
     end: 'Present',
