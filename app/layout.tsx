@@ -13,15 +13,15 @@ export const metadata: Metadata = {
     template: '%s | David Shumba',
   },
   description:
-    'UK-based Data Analyst Degree Apprentice building dashboards, automation, and AI workflows.',
-  keywords: ['David Shumba', 'Data Analyst', 'Degree Apprentice', 'Power BI', 'SQL', 'Python', 'UK'],
+    'David Shumba, Data Apprentice at Mercedes-Benz Financial Services and Software Engineering degree apprentice at Cranfield, building data pipelines, automation and analytics.',
+  keywords: ['David Shumba', 'Data Apprentice', 'Degree Apprentice', 'Data Engineering', 'Software Engineering', 'Python', 'SQL', 'Azure', 'Databricks', 'Power BI', 'UK'],
   authors: [{ name: 'David Shumba', url: 'https://davidshumba.com' }],
   metadataBase: new URL('https://davidshumba.com'),
   alternates: { canonical: '/' },
   openGraph: {
     title: 'David Shumba',
     description:
-      'UK-based Data Degree Apprentice building data systems, software, and AI workflows.',
+      'Engineering the systems that turn data into useful intelligence. Data Apprentice at Mercedes-Benz Financial Services.',
     url: 'https://davidshumba.com',
     siteName: 'David Shumba',
     locale: 'en_GB',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'David Shumba',
     description:
-      'UK-based Data Degree Apprentice building data systems, software, and AI workflows.',
+      'Engineering the systems that turn data into useful intelligence. Data Apprentice at Mercedes-Benz Financial Services.',
   },
   robots: { index: true, follow: true },
 }
@@ -47,14 +47,17 @@ const jsonLd = {
     profile.socials.github,
     ...(profile.socials.youtube ? [profile.socials.youtube] : []),
   ],
+  ...(profile.employer ? { worksFor: { '@type': 'Organization', name: profile.employer } } : {}),
+  alumniOf: { '@type': 'CollegeOrUniversity', name: 'Cranfield University' },
   knowsAbout: [
-    'Power BI',
-    'SQL',
     'Python',
-    'Data Analytics',
-    'AI Automation',
+    'SQL',
+    'Data Engineering',
     'Data Pipelines',
-    'Dashboard Design',
+    'Azure Data Factory',
+    'Databricks',
+    'Power BI',
+    'Software Testing',
   ],
 }
 

@@ -6,13 +6,12 @@ export type Education = {
   note?: string         // e.g. expected grade, modules, honours
 }
 
-// TODO: replace with your real education details
 export const educations: Education[] = [
   {
-    qualification: 'BSc Digital and Technology Solutions (Degree Apprenticeship)',
-    // institution: 'University Name',  // uncomment and fill in
-    start: '2024',
-    end: 'Present',
-    note: 'In progress — combined workplace learning and academic study.',
+    qualification: 'BSc (Hons) Digital and Technology Solutions',
+    institution: 'Cranfield University',
+    start: 'Sep 2025',
+    end: 'Jan 2028',
+    note: 'Level 6 degree apprenticeship, Software Engineering specialism. Combines workplace delivery with academic study.',
   },
 ]

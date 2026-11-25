@@ -5,19 +5,19 @@ export type SkillCategory = {
 
 export const skills: SkillCategory[] = [
   {
-    category: 'Data & Analytics',
-    items: ['Power BI', 'DAX', 'SQL', 'Excel'],
+    category: 'Languages',
+    items: ['Python', 'SQL', 'PySpark', 'DAX'],
   },
   {
-    category: 'Programming',
-    items: ['Python', 'pandas', 'NumPy'],
+    category: 'Data Engineering',
+    items: ['Azure Data Factory', 'Databricks', 'Microsoft Fabric', 'pandas'],
   },
   {
-    category: 'AI & Automation',
-    items: ['Prompt engineering', 'Workflow automation', 'scikit-learn'],
+    category: 'Analytics',
+    items: ['Power BI', 'Excel'],
   },
   {
-    category: 'Tools',
-    items: ['Git / GitHub', 'VS Code', 'Vercel', 'Jupyter'],
+    category: 'Engineering Tools',
+    items: ['Git / GitHub', 'pytest', 'VS Code', 'Vercel'],
   },
 ]

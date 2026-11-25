@@ -12,29 +12,41 @@ export type Project = {
   highlight?: boolean // show on homepage Work section
 }
 
-// TODO: replace placeholder descriptions with real scope and outcomes as you ship.
-// Add sourceUrl when repos are public. Add liveUrl when deployed.
+// Every project here is real and honestly marked as in progress or shipped.
+// Add sourceUrl when a repo is public and liveUrl when something is deployed.
 export const projects: Project[] = [
   {
-    slug: 'nhs-ae-dashboard',
-    title: 'NHS A&E Performance Dashboard',
+    slug: 'nhs-ae-pipeline',
+    title: 'NHS A&E Performance Pipeline',
     description:
-      'Analysing NHS England A&E waiting-time data to surface operational patterns and performance trends. Built in Power BI with SQL preprocessing and Python for data cleaning.',
+      "A tested data pipeline for NHS England's monthly A&E data, asking how performance against the 4-hour standard varies across trusts and over time. Python ingestion and validation, DuckDB storage, SQL analysis, with pytest and GitHub Actions.",
     status: 'building',
-    date: 'June 2026',
-    tags: ['Power BI', 'SQL', 'Python'],
-    // sourceUrl: 'https://github.com/davidshumba/nhs-ae-dashboard',  // uncomment when public
+    date: 'Nov 2026',
+    tags: ['Python', 'pandas', 'DuckDB', 'SQL', 'pytest', 'GitHub Actions'],
+    sourceUrl: 'https://github.com/davidshumba/nhs-ae-pipeline',
     highlight: true,
   },
   {
-    slug: 'predictive-maintenance-cmapss',
-    title: 'Predictive Maintenance — NASA C-MAPSS',
+    slug: 'davidshumba-com',
+    title: 'davidshumba.com',
     description:
-      'Remaining-useful-life modelling on the NASA turbofan engine degradation dataset (C-MAPSS). Exploring regression and LSTM approaches to predict engine failure before it occurs.',
-    status: 'building',
+      'This site. A content-driven portfolio where every section is generated from typed content files, so updating it means editing data, not layout. Light and dark themes, built and deployed on Vercel.',
+    status: 'live',
     date: '2026',
-    tags: ['Python', 'pandas', 'scikit-learn'],
-    // sourceUrl: 'https://github.com/davidshumba/predictive-maintenance',  // uncomment when public
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    liveUrl: 'https://davidshumba.com',
+    // sourceUrl: 'https://github.com/davidshumba/davidshumba-site',  // uncomment once the repo is public
     highlight: true,
+  },
+  {
+    // Parked until the engineering foundations are in place; hidden from the homepage.
+    slug: 'predictive-maintenance-cmapss',
+    title: 'Predictive Maintenance: NASA C-MAPSS',
+    description:
+      'Remaining-useful-life modelling on the NASA turbofan engine degradation dataset (C-MAPSS), predicting engine failure before it occurs.',
+    status: 'building',
+    date: '2027',
+    tags: ['Python', 'pandas', 'scikit-learn'],
+    highlight: false,
   },
 ]

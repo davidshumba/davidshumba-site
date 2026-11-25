@@ -1,20 +1,19 @@
 # David Shumba
 
-David Shumba is a UK-based Data Degree Apprentice.
+David Shumba is a UK-based Data Apprentice at Mercedes-Benz Financial Services, studying BSc (Hons) Digital and Technology Solutions at Cranfield University (Level 6 degree apprenticeship, Software Engineering specialism).
 
 ## What he does
 
-He builds data dashboards, reporting automation, and data pipelines. His primary tool is Power BI; he also works with SQL, Python (pandas), and AI automation tooling.
+He works across data engineering, financial reconciliation and analytics: Azure Data Factory pipelines that automate finance data delivery, reconciliation automation in Python and SQL, and Power BI reporting for Finance and Audit. Previously a Data Analyst Degree Apprentice at apetito UK.
 
 ## Current focus
 
-Data analytics and AI automation. He is currently building:
-- NHS A&E Performance Dashboard — analysing NHS England A&E waiting-time data to surface operational patterns and performance trends.
-- Predictive Maintenance model using the NASA C-MAPSS turbofan engine degradation dataset.
+Building software engineering foundations (testing, APIs, CI/CD) through shipped projects, with an interest in healthcare and automotive problems. Currently building:
+- NHS A&E Performance Pipeline: a tested data pipeline for NHS England's monthly A&E data (Python, DuckDB, SQL, pytest, GitHub Actions). https://github.com/davidshumba/nhs-ae-pipeline
 
 ## Skills
 
-Power BI, DAX, SQL, Excel, Python, pandas, NumPy, scikit-learn, prompt engineering, workflow automation, Git, GitHub, Jupyter, VS Code, Vercel.
+Python, SQL, PySpark, DAX, Azure Data Factory, Databricks, Microsoft Fabric, pandas, Power BI, Excel, Git, GitHub, pytest, VS Code, Vercel.
 
 ## Links
 

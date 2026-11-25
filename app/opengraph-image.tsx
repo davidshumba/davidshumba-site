@@ -52,7 +52,7 @@ export default function OgImage() {
             letterSpacing: '0.02em',
           }}
         >
-          Data Degree Apprentice — UK
+          Data Apprentice · Mercedes-Benz Financial Services
         </p>
       </div>
     ),

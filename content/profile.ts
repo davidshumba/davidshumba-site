@@ -20,7 +20,7 @@ export type Profile = {
   role: string
   employer?: string    // optional — leave blank to omit employer branding
   location: string
-  tagline: string     // TODO: refine this in your own voice
+  tagline: string
   currentlyBuilding: CurrentlyBuilding
   socials: SocialLinks
   stats: Stat[]       // leave empty until you have real, verifiable numbers
@@ -28,14 +28,14 @@ export type Profile = {
 
 export const profile: Profile = {
   name: 'David Shumba',
-  role: 'Data Degree Apprentice',
-  // employer: 'Your Employer',  // uncomment and fill in if you want to show it
+  role: 'Data Apprentice',
+  employer: 'Mercedes-Benz Financial Services',
   location: 'United Kingdom',
-  // TODO: refine tagline in your own voice
-  tagline: 'I turn messy data into clear decisions — dashboards, automation, and AI workflows.',
+  tagline:
+    'Engineering the systems that turn data into useful intelligence: data pipelines, automation and analytics, built and tested properly.',
   currentlyBuilding: {
-    label: 'NHS A&E Performance Dashboard',
-    href: 'https://github.com/davidshumba',  // TODO: update to specific repo URL when public
+    label: 'NHS A&E Performance Pipeline',
+    href: 'https://github.com/davidshumba/nhs-ae-pipeline',
   },
   socials: {
     linkedin: 'https://linkedin.com/in/davidshumba',

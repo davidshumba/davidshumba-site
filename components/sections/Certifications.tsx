@@ -21,7 +21,7 @@ export function Certifications() {
                 <div>
                   <p className="text-sm font-medium text-fg">{cert.name}</p>
                   <p className="font-mono text-xs text-muted mt-0.5">
-                    {cert.issuer} · {cert.date}
+                    {cert.date ? `${cert.issuer} · ${cert.date}` : cert.issuer}
                   </p>
                 </div>
                 {cert.credentialUrl && (

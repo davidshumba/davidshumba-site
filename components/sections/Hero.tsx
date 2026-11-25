@@ -8,7 +8,7 @@ export function Hero() {
       <div className="mx-auto max-w-[880px] px-6">
         <AnimatedReveal>
           <p className="font-mono text-xs tracking-widest text-muted uppercase mb-5 sm:mb-8">
-            {profile.location}
+            {profile.employer ? `${profile.role} · ${profile.employer}` : profile.role}
           </p>
           <h1 className="text-[clamp(2rem,9vw,5rem)] font-semibold leading-[1.05] tracking-tight text-fg mb-6">
             {profile.name}

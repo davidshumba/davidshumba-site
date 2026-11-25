@@ -1,16 +1,18 @@
 export type Certification = {
   name: string
   issuer: string
-  date: string
+  date?: string           // omit if unknown
   credentialUrl?: string  // link to verifiable credential; omit if none
 }
 
-// Empty array — the Certifications section hides itself when this is empty.
-// TODO: add entries as you earn certifications. Example:
-// {
-//   name: 'Microsoft Certified: Power BI Data Analyst Associate',
-//   issuer: 'Microsoft',
-//   date: 'Jan 2026',
-//   credentialUrl: 'https://learn.microsoft.com/...',
-// },
-export const certifications: Certification[] = []
+// The Certifications section hides itself when this is empty.
+export const certifications: Certification[] = [
+  {
+    name: 'Claude Code 101',
+    issuer: 'Anthropic Academy',
+  },
+  {
+    name: 'Claude 101',
+    issuer: 'Anthropic Academy',
+  },
+]
